@@ -68,7 +68,7 @@ namespace LinqExercise
                 LastName = "Narukami",
                 YearsOfExperience = 1
             };
-            employees.Append(newEmployee);
+            employees = employees.Append(newEmployee).ToList();
             Console.WriteLine();
 
             Console.ReadLine();
